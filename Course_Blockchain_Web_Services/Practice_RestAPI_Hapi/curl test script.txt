@@ -1,0 +1,11 @@
+curl -X GET http://localhost:3000/api/block/1 
+
+
+curl -X POST \
+  http://localhost:3000/api/block \
+  -H 'Cache-Control: no-cache' \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: 1e551722-4382-49cc-84f1-19d3d433c1e7' \
+  -d '{
+    "data":{"hash":"aa268d245ee084fe37f1b594eedb7410d3fb65f421f6e737aeda98a1f3b98798","height":11,"body":"Test Data #11","time":"1555573827"}
+}'

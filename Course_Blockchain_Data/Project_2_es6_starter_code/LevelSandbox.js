@@ -15,7 +15,32 @@ class LevelSandbox {
     getLevelDBData(key){
         let self = this;
         return new Promise(function(resolve, reject) {
-            // Add your code here, remember in Promises you need to resolve() or reject()
+            self.db.get(key, (err, value) => {
+                if(err){
+                    if (err.type == 'NotFoundError') {
+                        resolve(undefined);  //@cool if NotFoundError 
+                    }else {
+                        reject(err);
+                    }
+                }else {
+                    resolve(value);
+                }       
+            });
+        });
+    }
+
+    // Get All Blocks in DB
+    getAllBlocks(){
+        let self = this;
+        let dataArray = [];
+        return new Promise(function(resolve, reject){
+            self.db.createReadStream().on('data', function(chunk){
+                dataArray.push(chunk);
+            }).on('error', function(err){
+                reject(error);
+            }).on('close', function(){
+                resolve(JSON.stringify(dataArray).toString());
+            });
         });
     }
 
@@ -23,7 +48,12 @@ class LevelSandbox {
     addLevelDBData(key, value) {
         let self = this;
         return new Promise(function(resolve, reject) {
-            // Add your code here, remember in Promises you need to resolve() or reject() 
+            self.db.put(key, value, function(err) {
+                if (err) {
+                    reject(err);
+                }
+                resolve(value);
+            });
         });
     }
 
@@ -31,7 +61,14 @@ class LevelSandbox {
     getBlocksCount() {
         let self = this;
         return new Promise(function(resolve, reject){
-            // Add your code here, remember in Promises you need to resolve() or reject()
+            let count = 0;
+            self.db.createReadStream().on('data', function(chunk){
+                count++;
+            }).on('error', function(err){
+                reject(error);
+            }).on('close', function(){
+                resolve(count - 1);
+            });
         });
     }
         

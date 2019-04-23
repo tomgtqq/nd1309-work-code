@@ -1,0 +1,419 @@
+{
+  "name": "rest_api_hapi",
+  "version": "1.0.0",
+  "dependencies": {
+    "crypto-js": {
+      "version": "3.1.9-1",
+      "from": "crypto-js@3.1.9-1",
+      "resolved": "https://registry.npmjs.org/crypto-js/-/crypto-js-3.1.9-1.tgz"
+    },
+    "hapi": {
+      "version": "17.6.0",
+      "from": "hapi@17.6.0",
+      "resolved": "https://registry.npmjs.org/hapi/-/hapi-17.6.0.tgz",
+      "dependencies": {
+        "accept": {
+          "version": "3.0.2",
+          "from": "accept@3.0.2",
+          "resolved": "https://registry.npmjs.org/accept/-/accept-3.0.2.tgz",
+          "dependencies": {
+            "boom": {
+              "version": "7.2.0",
+              "from": "boom@7.2.0",
+              "resolved": "https://registry.npmjs.org/boom/-/boom-7.2.0.tgz"
+            },
+            "hoek": {
+              "version": "5.0.4",
+              "from": "hoek@5.0.4",
+              "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+            }
+          }
+        },
+        "ammo": {
+          "version": "3.0.1",
+          "from": "ammo@3.0.1",
+          "resolved": "https://registry.npmjs.org/ammo/-/ammo-3.0.1.tgz",
+          "dependencies": {
+            "hoek": {
+              "version": "5.0.4",
+              "from": "hoek@5.0.4",
+              "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+            }
+          }
+        },
+        "boom": {
+          "version": "7.2.0",
+          "from": "boom@7.2.0",
+          "resolved": "https://registry.npmjs.org/boom/-/boom-7.2.0.tgz",
+          "dependencies": {
+            "hoek": {
+              "version": "5.0.4",
+              "from": "hoek@5.0.4",
+              "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+            }
+          }
+        },
+        "bounce": {
+          "version": "1.2.0",
+          "from": "bounce@1.2.0",
+          "resolved": "https://registry.npmjs.org/bounce/-/bounce-1.2.0.tgz",
+          "dependencies": {
+            "boom": {
+              "version": "7.2.0",
+              "from": "boom@7.2.0",
+              "resolved": "https://registry.npmjs.org/boom/-/boom-7.2.0.tgz"
+            },
+            "hoek": {
+              "version": "5.0.4",
+              "from": "hoek@5.0.4",
+              "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+            }
+          }
+        },
+        "call": {
+          "version": "5.0.1",
+          "from": "call@5.0.1",
+          "resolved": "https://registry.npmjs.org/call/-/call-5.0.1.tgz",
+          "dependencies": {
+            "boom": {
+              "version": "7.2.0",
+              "from": "boom@7.2.0",
+              "resolved": "https://registry.npmjs.org/boom/-/boom-7.2.0.tgz"
+            },
+            "hoek": {
+              "version": "5.0.4",
+              "from": "hoek@5.0.4",
+              "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+            }
+          }
+        },
+        "catbox": {
+          "version": "10.0.3",
+          "from": "catbox@10.0.3",
+          "resolved": "https://registry.npmjs.org/catbox/-/catbox-10.0.3.tgz",
+          "dependencies": {
+            "boom": {
+              "version": "7.2.0",
+              "from": "boom@7.2.0",
+              "resolved": "https://registry.npmjs.org/boom/-/boom-7.2.0.tgz"
+            },
+            "hoek": {
+              "version": "5.0.4",
+              "from": "hoek@5.0.4",
+              "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+            },
+            "joi": {
+              "version": "13.7.0",
+              "from": "joi@13.7.0",
+              "resolved": "https://registry.npmjs.org/joi/-/joi-13.7.0.tgz"
+            }
+          }
+        },
+        "catbox-memory": {
+          "version": "3.1.2",
+          "from": "catbox-memory@3.1.2",
+          "resolved": "https://registry.npmjs.org/catbox-memory/-/catbox-memory-3.1.2.tgz",
+          "dependencies": {
+            "big-time": {
+              "version": "2.0.1",
+              "from": "big-time@2.0.1",
+              "resolved": "https://registry.npmjs.org/big-time/-/big-time-2.0.1.tgz"
+            },
+            "boom": {
+              "version": "7.2.0",
+              "from": "boom@7.2.0",
+              "resolved": "https://registry.npmjs.org/boom/-/boom-7.2.0.tgz"
+            },
+            "hoek": {
+              "version": "5.0.4",
+              "from": "hoek@5.0.4",
+              "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+            }
+          }
+        },
+        "heavy": {
+          "version": "6.1.0",
+          "from": "heavy@6.1.0",
+          "resolved": "https://registry.npmjs.org/heavy/-/heavy-6.1.0.tgz",
+          "dependencies": {
+            "boom": {
+              "version": "7.2.0",
+              "from": "boom@7.2.0",
+              "resolved": "https://registry.npmjs.org/boom/-/boom-7.2.0.tgz"
+            },
+            "hoek": {
+              "version": "5.0.4",
+              "from": "hoek@5.0.4",
+              "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+            },
+            "joi": {
+              "version": "13.7.0",
+              "from": "joi@13.7.0",
+              "resolved": "https://registry.npmjs.org/joi/-/joi-13.7.0.tgz"
+            }
+          }
+        },
+        "hoek": {
+          "version": "5.0.4",
+          "from": "hoek@5.0.4",
+          "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+        },
+        "joi": {
+          "version": "13.7.0",
+          "from": "joi@13.7.0",
+          "resolved": "https://registry.npmjs.org/joi/-/joi-13.7.0.tgz",
+          "dependencies": {
+            "hoek": {
+              "version": "5.0.4",
+              "from": "hoek@5.0.4",
+              "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+            },
+            "isemail": {
+              "version": "3.1.3",
+              "from": "isemail@3.1.3",
+              "resolved": "https://registry.npmjs.org/isemail/-/isemail-3.1.3.tgz",
+              "dependencies": {
+                "punycode": {
+                  "version": "2.1.1",
+                  "from": "punycode@2.1.1",
+                  "resolved": "https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz"
+                }
+              }
+            },
+            "topo": {
+              "version": "3.0.0",
+              "from": "topo@3.0.0",
+              "resolved": "https://registry.npmjs.org/topo/-/topo-3.0.0.tgz"
+            }
+          }
+        },
+        "mimos": {
+          "version": "4.0.0",
+          "from": "mimos@4.0.0",
+          "resolved": "https://registry.npmjs.org/mimos/-/mimos-4.0.0.tgz",
+          "dependencies": {
+            "hoek": {
+              "version": "5.0.4",
+              "from": "hoek@5.0.4",
+              "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+            },
+            "mime-db": {
+              "version": "1.36.0",
+              "from": "mime-db@1.36.0",
+              "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.36.0.tgz"
+            }
+          }
+        },
+        "podium": {
+          "version": "3.1.2",
+          "from": "podium@3.1.2",
+          "resolved": "https://registry.npmjs.org/podium/-/podium-3.1.2.tgz",
+          "dependencies": {
+            "hoek": {
+              "version": "5.0.4",
+              "from": "hoek@5.0.4",
+              "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+            },
+            "joi": {
+              "version": "13.7.0",
+              "from": "joi@13.7.0",
+              "resolved": "https://registry.npmjs.org/joi/-/joi-13.7.0.tgz"
+            }
+          }
+        },
+        "shot": {
+          "version": "4.0.5",
+          "from": "shot@4.0.5",
+          "resolved": "https://registry.npmjs.org/shot/-/shot-4.0.5.tgz",
+          "dependencies": {
+            "hoek": {
+              "version": "5.0.4",
+              "from": "hoek@5.0.4",
+              "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+            },
+            "joi": {
+              "version": "13.7.0",
+              "from": "joi@13.7.0",
+              "resolved": "https://registry.npmjs.org/joi/-/joi-13.7.0.tgz"
+            }
+          }
+        },
+        "statehood": {
+          "version": "6.0.6",
+          "from": "statehood@6.0.6",
+          "resolved": "https://registry.npmjs.org/statehood/-/statehood-6.0.6.tgz",
+          "dependencies": {
+            "boom": {
+              "version": "7.2.0",
+              "from": "boom@7.2.0",
+              "resolved": "https://registry.npmjs.org/boom/-/boom-7.2.0.tgz"
+            },
+            "bounce": {
+              "version": "1.2.0",
+              "from": "bounce@1.2.0",
+              "resolved": "https://registry.npmjs.org/bounce/-/bounce-1.2.0.tgz"
+            },
+            "cryptiles": {
+              "version": "4.1.2",
+              "from": "cryptiles@4.1.2",
+              "resolved": "https://registry.npmjs.org/cryptiles/-/cryptiles-4.1.2.tgz",
+              "dependencies": {
+                "boom": {
+                  "version": "7.2.0",
+                  "from": "boom@7.2.0",
+                  "resolved": "https://registry.npmjs.org/boom/-/boom-7.2.0.tgz"
+                }
+              }
+            },
+            "hoek": {
+              "version": "5.0.4",
+              "from": "hoek@5.0.4",
+              "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+            },
+            "iron": {
+              "version": "5.0.4",
+              "from": "iron@5.0.4",
+              "resolved": "https://registry.npmjs.org/iron/-/iron-5.0.4.tgz",
+              "dependencies": {
+                "boom": {
+                  "version": "7.2.0",
+                  "from": "boom@7.2.0",
+                  "resolved": "https://registry.npmjs.org/boom/-/boom-7.2.0.tgz"
+                },
+                "cryptiles": {
+                  "version": "4.1.2",
+                  "from": "cryptiles@4.1.2",
+                  "resolved": "https://registry.npmjs.org/cryptiles/-/cryptiles-4.1.2.tgz"
+                },
+                "hoek": {
+                  "version": "5.0.4",
+                  "from": "hoek@5.0.4",
+                  "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+                }
+              }
+            },
+            "joi": {
+              "version": "13.7.0",
+              "from": "joi@13.7.0",
+              "resolved": "https://registry.npmjs.org/joi/-/joi-13.7.0.tgz"
+            }
+          }
+        },
+        "subtext": {
+          "version": "6.0.7",
+          "from": "subtext@6.0.7",
+          "resolved": "https://registry.npmjs.org/subtext/-/subtext-6.0.7.tgz",
+          "dependencies": {
+            "boom": {
+              "version": "7.2.0",
+              "from": "boom@7.2.0",
+              "resolved": "https://registry.npmjs.org/boom/-/boom-7.2.0.tgz"
+            },
+            "content": {
+              "version": "4.0.5",
+              "from": "content@4.0.5",
+              "resolved": "https://registry.npmjs.org/content/-/content-4.0.5.tgz",
+              "dependencies": {
+                "boom": {
+                  "version": "7.2.0",
+                  "from": "boom@7.2.0",
+                  "resolved": "https://registry.npmjs.org/boom/-/boom-7.2.0.tgz"
+                }
+              }
+            },
+            "hoek": {
+              "version": "5.0.4",
+              "from": "hoek@5.0.4",
+              "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+            },
+            "pez": {
+              "version": "4.0.2",
+              "from": "pez@4.0.2",
+              "resolved": "https://registry.npmjs.org/pez/-/pez-4.0.2.tgz",
+              "dependencies": {
+                "b64": {
+                  "version": "4.0.0",
+                  "from": "b64@4.0.0",
+                  "resolved": "https://registry.npmjs.org/b64/-/b64-4.0.0.tgz"
+                },
+                "boom": {
+                  "version": "7.2.0",
+                  "from": "boom@7.2.0",
+                  "resolved": "https://registry.npmjs.org/boom/-/boom-7.2.0.tgz"
+                },
+                "content": {
+                  "version": "4.0.5",
+                  "from": "content@4.0.5",
+                  "resolved": "https://registry.npmjs.org/content/-/content-4.0.5.tgz"
+                },
+                "hoek": {
+                  "version": "5.0.4",
+                  "from": "hoek@5.0.4",
+                  "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+                },
+                "nigel": {
+                  "version": "3.0.1",
+                  "from": "nigel@3.0.1",
+                  "resolved": "https://registry.npmjs.org/nigel/-/nigel-3.0.1.tgz",
+                  "dependencies": {
+                    "hoek": {
+                      "version": "5.0.4",
+                      "from": "hoek@5.0.4",
+                      "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+                    },
+                    "vise": {
+                      "version": "3.0.0",
+                      "from": "vise@3.0.0",
+                      "resolved": "https://registry.npmjs.org/vise/-/vise-3.0.0.tgz",
+                      "dependencies": {
+                        "hoek": {
+                          "version": "5.0.4",
+                          "from": "hoek@5.0.4",
+                          "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "wreck": {
+              "version": "14.1.0",
+              "from": "wreck@14.1.0",
+              "resolved": "https://registry.npmjs.org/wreck/-/wreck-14.1.0.tgz",
+              "dependencies": {
+                "boom": {
+                  "version": "7.2.0",
+                  "from": "boom@7.2.0",
+                  "resolved": "https://registry.npmjs.org/boom/-/boom-7.2.0.tgz"
+                },
+                "hoek": {
+                  "version": "5.0.4",
+                  "from": "hoek@5.0.4",
+                  "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+                }
+              }
+            }
+          }
+        },
+        "teamwork": {
+          "version": "3.0.1",
+          "from": "teamwork@3.0.1",
+          "resolved": "https://registry.npmjs.org/teamwork/-/teamwork-3.0.1.tgz"
+        },
+        "topo": {
+          "version": "3.0.0",
+          "from": "topo@3.0.0",
+          "resolved": "https://registry.npmjs.org/topo/-/topo-3.0.0.tgz",
+          "dependencies": {
+            "hoek": {
+              "version": "5.0.4",
+              "from": "hoek@5.0.4",
+              "resolved": "https://registry.npmjs.org/hoek/-/hoek-5.0.4.tgz"
+            }
+          }
+        }
+      }
+    }
+  }
+}
